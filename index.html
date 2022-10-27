@@ -443,16 +443,15 @@
               </li>
             </ul>
           </div>
-          <div class="container-send">
-            <label class="send-form" for="send-field"
-              >Підпишіться на розсилку</label
-            >
-            <input
-              class="send-input"
-              id="send-field"
-              type="email"
-              name="send-field"
-            />
+          <div class="send-container">
+          <p class="send-text">Підпишіться на розсилку</p>
+          <form class="send-form">
+           <label for="mail"></label > 
+          <input  type="email" name="mail" id="mail" placeholder="E-mail"> 
+            <button type="submit" class="button-send">Підписатися <svg class="button-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg></button>
+          </form>
           </div>
         </div>
       </div>
@@ -525,7 +524,12 @@
             />
             <svg class="checkbox-icon" width="16" height="15">
               <use href="./images/icons.svg#icon-check"></use>
-            </svg>
+            </svg>  
+            </div>
+
+            
+   <div class="send"><button class="send-button" type="submit">Відправити</button></div>
+
           </div>
         </form>
       </div>
