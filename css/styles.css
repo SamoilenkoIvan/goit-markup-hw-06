@@ -902,6 +902,7 @@ a {
 
 .check-link {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .checkbox-input {
