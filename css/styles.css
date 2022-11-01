@@ -890,7 +890,6 @@ a {
   margin-bottom: 20px;
 }
 
-.form-textarea:hover,
 .form-textarea:focus {
   border-color: var(--accent-color);
 }
