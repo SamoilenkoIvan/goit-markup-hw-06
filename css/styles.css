@@ -577,7 +577,7 @@ a {
 /* Container-send */
 
 .send-container {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .send-form {
@@ -602,6 +602,10 @@ a {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+}
+
+.button-send:hover {
+  background: var(--button-color);
 }
 
 .send-form input {
@@ -787,14 +791,13 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 581px;
   width: 528px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: scale(1) translate(-50%, -50%);
-  /* padding: 40px 40px; */
+  padding: 40px;
 }
 
 .button {
@@ -813,17 +816,20 @@ a {
   right: 8px;
 }
 
+.close-icon:hover {
+  fill: var(--accent-color);
+}
+
 /* Form */
 
 .modal-content {
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 12px;
+  color: var(--title-text-color);
 }
 
 .contact-form {
-  padding-left: 40px;
-  padding-right: 40px;
+
 }
 
 .form-label {
@@ -834,38 +840,40 @@ a {
 
 .person-contact {
   position: relative;
+  display: block;
+  margin-top: 4px;
 }
 
 .form-input {
   width: 100%;
   height: 40px;
-  padding: 14px 14px 14px 30px;
+  padding: 12px 16px 12px 42px;
+  font-style: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   border: 1px solid var(--input-border);
   border-radius: 4px;
   outline: none;
-  margin-bottom: 10px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
 .form-input:focus {
   border-color: var(--accent-color);
 }
 
 .form-icon {
   position: absolute;
-  left: 14px;
-  top: 10px;
-  transform: translateX(-50%);
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: var(--title-text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover + .form-icon,
 .form-input:focus + .form-icon {
   fill: var(--accent-color);
 }
@@ -956,6 +964,9 @@ a {
   align-items: center;
   letter-spacing: 0.06em;
   margin-top: 30px;
-  margin-bottom: 40px;
   cursor: pointer;
+}
+
+.send-button:hover {
+  background: var(--button-color);
 }
