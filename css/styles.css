@@ -602,6 +602,9 @@ a {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    transition-property: background;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-send:hover {
@@ -814,6 +817,9 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
+  transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover {
@@ -835,7 +841,7 @@ a {
 .form-label {
   display: block;
   line-height: 1.17;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .person-contact {
@@ -878,6 +884,12 @@ a {
   fill: var(--accent-color);
 }
 
+.textarea-label {
+  display: block;
+    line-height: 1.17;
+    margin-bottom: 20px;
+}
+
 .form-textarea {
   width: 100%;
   padding: 12px 16px;
@@ -887,11 +899,15 @@ a {
   resize: none;
   outline: none;
   color: var(--color-placeholder);
-  margin-bottom: 20px;
+  margin-top: 4px;
 }
 
 .form-textarea:focus {
   border-color: var(--accent-color);
+}
+
+.person-comment {
+  margin-top: 4px;
 }
 
 /* Checkbox */
@@ -945,10 +961,10 @@ a {
 }
 
 
-.send {
+/* .send {
   display: flex;
   justify-content: center;
-}
+} */
 
 .send-button {
   width: 200px;
@@ -964,6 +980,12 @@ a {
   letter-spacing: 0.06em;
   margin-top: 30px;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover {
